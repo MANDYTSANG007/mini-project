@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    
     <title>Mini-Project</title>
 </head>
 <body>
+    <div class="card">
+        <h3 class="card-header text-uppercase">Library of Congress Search Engine</h3>
+        <form id="user-form" class="card-body">
+          <label class="form-label" for="search">Search</label>
+          <input name="search" id="search" type="text" autofocus="true" class="form-input" />
+          <label class="form-label" for="format">Select a format...</label>
+          <!--<input name="format" id="format" autofocus="true" class="form-input" />-->
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select a format
+            </button>
+            <div id="formatButtons" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a data-format="maps" class="dropdown-item" >Maps</a>
+              <a data-format="audio" class="dropdown-item" >Audio</a>
+              <a data-format="photos" class="dropdown-item" >Photos</a>
+              <a data-format="manuscripts" class="dropdown-item" >Manuscripts</a>
+              <a data-format="newspaper" class="dropdown-item" >Newspaper</a>
+              <a data-format="file-and-videos" class="dropdown-item" >Film-and-videos</a>
+              <a data-format="notated-music" class="dropdown-item" >notated-music</a>
+              <a data-format="websites" class="dropdown-item" >websites</a>
+              
+            </div>
+          </div>
+          
+          <button type="search" id="button">Click Me</button>
+        </form>
+      </div>
     
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </html>
